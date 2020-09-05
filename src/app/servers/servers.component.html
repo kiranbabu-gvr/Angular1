@@ -1,0 +1,12 @@
+<button class="btn btn-primary" [disabled]="!isServerEnabled" (click)="onServerCreation()">Add Server</button>
+<p>{{serverCreationStatus}}</p>
+
+<input type="text" class="form-control" (input)="onUpdateServerName($event)">
+<p>{{serverName}}</p>
+
+<p>
+        {{isServerEnabled }}
+</p>
+<p [innerText]="isServerEnabled"></p>
+<app-server></app-server>
+<app-server></app-server>
